@@ -1,0 +1,2 @@
+# CapgeminiPracticeQuestions
+My daily Practice.
