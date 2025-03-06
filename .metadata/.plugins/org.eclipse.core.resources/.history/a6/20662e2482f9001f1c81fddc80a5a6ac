@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+public class UserInterface {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		// Fill the code here
+		System.out.println("Enter a number");
+		String num = sc.nextLine();
+		int n= Integer.parseInt(num);
+		
+		if(n<0) {
+			System.out.println(num+" is an invalid number. Please enter a positive number");
+			return;
+		}
+		
+		int sq = n*n;
+		StringBuilder str = new StringBuilder();
+		str.append(sq);
+		
+		int numlen= num.length();
+//		if(n>9) {
+		int f = str.length()-numlen;
+		int l = str.length();
+		
+		if(str.substring(f,l).equals(num)) {
+			System.out.println(n+" is an automorphic number");
+			
+		}
+		else {
+			System.out.println(n+" is not an automorphic number");
+		}
+//		}
+//		else {
+//			int f=str.length()-1;
+//			int l=str.length();
+//			
+//			if(str.substring(f,l).equals(num)) {
+//				System.out.println(n+" is an automorphic number");
+//			}
+//			else {
+//				System.out.println(n+" is not an automorphic number");
+//			}
+//		}
+		
+		int sum=0;
+		while(n>1) {
+			int d = n%10;
+			sum+=d;
+			int dd=n/10;
+			if(dd<10) {
+				sum+=dd;
+				break;
+			}
+			
+		}
+		if(n%sum==0) {
+			System.out.println(n+" is an harshad number");
+		}
+		else {
+			System.out.println(n+" is not an harshad number");
+		}
+}
+}

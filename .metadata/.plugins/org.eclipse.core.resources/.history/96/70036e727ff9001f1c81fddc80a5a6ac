@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class UserInterface {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		// Fill the code here
+		System.out.println("Enter a number");
+		int num = sc.nextInt();
+		
+		if(num<0) {
+			System.out.println(num+" is an invalid number. Please enter a positive number");
+			return;
+		}
+		
+		int sq = num*num;
+		StringBuilder str = new 
+}
+}

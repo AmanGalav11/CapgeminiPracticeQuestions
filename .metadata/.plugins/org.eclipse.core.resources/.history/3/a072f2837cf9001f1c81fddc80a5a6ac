@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Granite {
+
+	private Map<String,String> graniteMap=new HashMap<String,String>();
+	
+	public Map<String, String> getGraniteMap() {
+		return graniteMap;
+	}
+
+	public void setGraniteMap(Map<String, String> graniteMap) {
+		this.graniteMap = graniteMap;
+	}
+	
+	public void addGranite(String orderId, String graniteType) {
+		//Fill the code
+	}
+	
+	public int findCountOfOrderIdsBasedOnTheGraniteType(String graniteType) {
+		//Fill the code
+		return 0;
+	}
+
+	public List<String> findOrderIdsBasedOnTheGraniteType(String graniteType){
+	        //Fill the code
+		return null;
+
+	}
+}
